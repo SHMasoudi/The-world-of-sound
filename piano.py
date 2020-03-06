@@ -6,11 +6,13 @@ Created on Thu Mar  5 19:07:02 2020
 @author: sheyda
 """
 from playsound import playsound
-s=input("please insert your file ")
+import time
+import random
+s=input("Please Enter the path of your file ")
 file=open(s,"r")
 c=[ch for ch in file.read()]
 for char in c:
-    
+    time.sleep(random.randint(1,1))
     if char=='a':
         playsound('/home/sheyda/The-world-of-sound/sounds/piano/28.mp3')
     if char=='b':
