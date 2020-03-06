@@ -3,6 +3,10 @@
 
 ![alt text](https://raw.githubusercontent.com/kiahamedi/The-world-of-sound/master/wallpaper.jpg)
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+
 ## Usage
 ```bash
 $ git https://github.com/sheyda1997/The-world-of-sound.git
