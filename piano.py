@@ -6,7 +6,6 @@ Created on Thu Mar  5 19:07:02 2020
 @author: sheyda
 """
 from playsound import playsound
-#s=input("enter char :")
 s=input("please insert your file ")
 file=open(s,"r")
 c=[ch for ch in file.read()]
