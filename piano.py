@@ -24,56 +24,116 @@ c=[ch for ch in file.read()]
 
 for char in c:
     pause()
-        
-    if char=='a':
+    
+    if char=="(":
         playsound('./sounds/piano/28.mp3')
-    if char=='b':
+    elif char==')':
+        playsound('./sounds/piano/28.mp3')
+    elif char==':':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='a':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='b':
         playsound('./sounds/piano/26.mp3')
-    if char=='c':
+    elif char=='c':
         playsound('./sounds/piano/25.mp3')
-    if char=='d':
+    elif char=='d':
         playsound('./sounds/piano/27.mp3')
-    if char=='e':
+    elif char=='e':
         playsound('./sounds/piano/24.mp3')
-    if char=='f':
+    elif char=='f':
         playsound('./sounds/piano/25.mp3')
-    if char=='g':
+    elif char=='g':
         playsound('./sounds/piano/26.mp3')
-    if char=='h':
+    elif char=='h':
         playsound('./sounds/piano/29.mp3')
-    if char=='i':
+    elif char=='i':
         playsound('./sounds/piano/26.mp3')
-    if char=='j':
+    elif char=='j':
         playsound('./sounds/piano/28.mp3')
-    if char=='k':
+    elif char=='k':
         playsound('./sounds/piano/29.mp3')
-    if char=='l':
+    elif char=='l':
         playsound('./sounds/piano/28.mp3')
-    if char=='m':
+    elif char=='m':
         playsound('./sounds/piano/27.mp3')
-    if char=='n':
+    elif char=='n':
         playsound('./sounds/piano/28.mp3')
-    if char=='o':
+    elif char=='o':
         playsound('./sounds/piano/29.mp3')
-    if char=='p':
+    elif char=='p':
         playsound('./sounds/piano/26.mp3')
-    if char=='q':
+    elif char=='q':
         playsound('./sounds/piano/28.mp3')
-    if char=='r':
+    elif char=='r':
         playsound('./sounds/piano/25.mp3')
-    if char=='s':
+    elif char=='s':
         playsound('./sounds/piano/27.mp3')
-    if char=='t':
+    elif char=='t':
         playsound('./sounds/piano/23.mp3')
-    if char=='u':
+    elif char=='u':
         playsound('./sounds/piano/24.mp3')
-    if char=='v':
+    elif char=='v':
         playsound('./sounds/piano/28.mp3')
-    if char=='w':
+    elif char=='w':
         playsound('./sounds/piano/27.mp3')
-    if char=='x':
+    elif char=='x':
         playsound('./sounds/piano/22.mp3')
-    if char=='y':
+    elif char=='y':
         playsound('./sounds/piano/26.mp3')
-    if char=='z':
+    elif char=='z':
+        playsound('./sounds/piano/19.mp3')
+        
+        
+    elif char=='A':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='B':
+        playsound('./sounds/piano/26.mp3')
+    elif char=='C':
+        playsound('./sounds/piano/25.mp3')
+    elif char=='D':
+        playsound('./sounds/piano/27.mp3')
+    elif char=='E':
+        playsound('./sounds/piano/24.mp3')
+    elif char=='F':
+        playsound('./sounds/piano/25.mp3')
+    elif char=='G':
+        playsound('./sounds/piano/26.mp3')
+    elif char=='H':
+        playsound('./sounds/piano/29.mp3')
+    elif char=='I':
+        playsound('./sounds/piano/26.mp3')
+    elif char=='J':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='K':
+        playsound('./sounds/piano/29.mp3')
+    elif char=='L':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='M':
+        playsound('./sounds/piano/27.mp3')
+    elif char=='N':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='O':
+        playsound('./sounds/piano/29.mp3')
+    elif char=='P':
+        playsound('./sounds/piano/26.mp3')
+    elif char=='Q':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='R':
+        playsound('./sounds/piano/25.mp3')
+    elif char=='S':
+        playsound('./sounds/piano/27.mp3')
+    elif char=='T':
+        playsound('./sounds/piano/23.mp3')
+    elif char=='U':
+        playsound('./sounds/piano/24.mp3')
+    elif char=='V':
+        playsound('./sounds/piano/28.mp3')
+    elif char=='W':
+        playsound('./sounds/piano/27.mp3')
+    elif char=='X':
+        playsound('./sounds/piano/22.mp3')
+    elif char=='Y':
+        playsound('./sounds/piano/26.mp3')
+    elif char=='Z':
         playsound('./sounds/piano/19.mp3')
