@@ -8,9 +8,12 @@ Created on Thu Mar  5 19:07:02 2020
 from playsound import playsound
 import time
 import random
-s=input("Please Enter the path of your file ")
-file=open(s,"r")
+
+
+s = input("Please Enter the path of your file: ")
+file = open(s, "r")
 c=[ch for ch in file.read()]
+
 for char in c:
     time.sleep(random.randint(1,1))
     if char=='a':
