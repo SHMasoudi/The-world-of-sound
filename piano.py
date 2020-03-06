@@ -6,16 +6,25 @@ Created on Thu Mar  5 19:07:02 2020
 @author: sheyda
 """
 from playsound import playsound
-import time
+from time import sleep
 import random
 
+
+def pause():
+    statusSleep = random.randint(0,10)
+    if statusSleep == 0:
+        sleep(0.5)
+    elif statusSleep == 1:
+        sleep(1)
 
 s = input("Please Enter the path of your file: ")
 file = open(s, "r")
 c=[ch for ch in file.read()]
 
+
 for char in c:
-    time.sleep(random.randint(1,1))
+    pause()
+        
     if char=='a':
         playsound('./sounds/piano/28.mp3')
     if char=='b':
