@@ -11,8 +11,9 @@ import random
 s=input("Please Enter the path of your file ")
 file=open(s,"r")
 c=[ch for ch in file.read()]
+
 for char in c:
-    time.sleep(random.randint(1,1))
+    
     if char=='a':
         playsound('/home/sheyda/The-world-of-sound/sounds/piano/28.mp3')
     if char=='b':
@@ -65,3 +66,26 @@ for char in c:
         playsound('/home/sheyda/The-world-of-sound/sounds/piano/26.mp3')
     if char=='z':
         playsound('/home/sheyda/The-world-of-sound/sounds/piano/19.mp3')
+    if char=='*':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/28.mp3')
+    if char=='#':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/29.mp3')
+    if char=='!':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/27.mp3')
+    if char=='"':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/26.mp3')
+    if char=='/':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/23.mp3')
+    if char=='-':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/26.mp3')
+    if char=='8':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/28.mp3')
+    if char=='@':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/24.mp3')
+    if char==':':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/29.mp3')
+    if char=='@':
+        playsound('/home/sheyda/The-world-of-sound/sounds/piano/28.mp3')
+    
+    
+        
