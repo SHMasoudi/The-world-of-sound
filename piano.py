@@ -100,60 +100,7 @@ for char in c:
         playsound('./sounds/piano/28.mp3')
     elif char==':':
         playsound('./sounds/piano/28.mp3')
-    elif char=='a':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='b':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='c':
-        playsound('./sounds/piano/25.mp3')
-    elif char=='d':
-        playsound('./sounds/piano/27.mp3')
-    elif char=='e':
-        playsound('./sounds/piano/24.mp3')
-    elif char=='f':
-        playsound('./sounds/piano/25.mp3')
-    elif char=='g':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='h':
-        playsound('./sounds/piano/29.mp3')
-    elif char=='i':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='j':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='k':
-        playsound('./sounds/piano/29.mp3')
-    elif char=='l':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='m':
-        playsound('./sounds/piano/27.mp3')
-    elif char=='n':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='o':
-        playsound('./sounds/piano/29.mp3')
-    elif char=='p':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='q':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='r':
-        playsound('./sounds/piano/29.mp3')
-    elif char=='s':
-        playsound('./sounds/piano/27.mp3')
-    elif char=='t':
-        playsound('./sounds/piano/25.mp3')
-    elif char=='u':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='v':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='w':
-        playsound('./sounds/piano/27.mp3')
-    elif char=='x':
-        playsound('./sounds/piano/26.mp3')
-    elif char=='y':
-        playsound('./sounds/piano/28.mp3')
-    elif char=='z':
-        playsound('./sounds/piano/29.mp3')
-        
-        
+    
     elif char=='A':
         playsound('./sounds/piano/28.mp3')
     elif char=='B':
