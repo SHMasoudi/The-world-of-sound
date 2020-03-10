@@ -18,7 +18,7 @@ def pause():
     elif statusSleep == 1:
         sleep(1)
 
-s = input("Please Enter the path of your file: ")
+s = input(">>>Please Enter the path of your file: ")   
 file = open(s, "r")
 c=[ch for ch in file.read()]
 for char in c:
@@ -283,4 +283,42 @@ for char in c:
         text = colored(char, 'red', attrs=['reverse', 'blink'])
         print(text)
         playsound('./sounds/piano/19.mp3')
+    elif char=='1':
+        text = colored(char, 'yellow', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/27.mp3')
+    elif char=='2':
+        text = colored(char, 'red', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/19.mp3')
+    elif char=='3':
+        text = colored(char, 'green', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/19.mp3')
+    elif char=='4':
+        text = colored(char, 'magenta', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/29.mp3')
+    elif char=='5':
+        text = colored(char, 'blue', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/26.mp3')
+    elif char=='6':
+        text = colored(char, 'cyan', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/25.mp3')
+    elif char=='7':
+        text = colored(char, 'red', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/19.mp3')
+    elif char=='9':
+        text = colored(char, 'magenta', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/28.mp3')
+    elif char=='0':
+        text = colored(char, 'red', attrs=['reverse', 'blink'])
+        print(text)
+        playsound('./sounds/piano/19.mp3')
+        
+    
 
