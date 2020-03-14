@@ -19,7 +19,7 @@ else:
     if option=="-h" or option=="--help":
         print("The World Of Sound")
         print("Description : A Collection of Piano Notes That Make A Pleasant Sound")
-        print("Constructor:Sheyda Masoudi & Kia Hamedi")
+        print("Developer:Sheyda Masoudi & Kia Hamedi")
         print("Email: ubuntuic6449@gmail.com")
         print("Github Address : git ttps://github.com/sheyda1997/The-world-of-sound.git")
         sys.exit(1)
