@@ -7,9 +7,26 @@ Created on Thu Mar  5 19:07:02 2020
 """
 from playsound import playsound
 from time import sleep
-from termcolor import colored 
+from termcolor import colored
 import random
-
+#----------------------------------------------------------------
+import sys
+try:
+    option=sys.argv[1]
+except IndexError:
+    import piano
+else:
+    if option=="-h" or option=="--help":
+        print("The World Of Sound")
+        print("Description : A Collection of Piano Notes That Make A Pleasant Sound")
+        print("Constructor:Sheyda Masoudi & Kia Hamedi")
+        print("Email: ubuntuic6449@gmail.com")
+        print("Github Address : git ttps://github.com/sheyda1997/The-world-of-sound.git")
+        sys.exit(1)
+    else:
+        print("invalid option")
+        sys.exit(1)
+#------------------------------------------------------------------
 
 def pause():
     statusSleep = random.randint(0,10)
@@ -17,12 +34,13 @@ def pause():
         sleep(0.5)
     elif statusSleep == 1:
         sleep(1)
+#------------------------------------------------------------------
 
-s = input(">>>Please Enter the path of your file: ")   
+s = input(">>>Please Enter the path of your file: ")
 file = open(s, "r")
 c=[ch for ch in file.read()]
 for char in c:
-    
+
     pause()
     if char=='a':
         text = colored(char, 'green', attrs=['reverse', 'blink'])
@@ -178,7 +196,7 @@ for char in c:
         text = colored(char, 'green', attrs=['reverse', 'blink'])
         print(text)
         playsound('./sounds/piano/28.mp3')
-    
+
     elif char=='A':
         text = colored(char, 'yellow', attrs=['reverse', 'blink'])
         print(text)
@@ -319,6 +337,3 @@ for char in c:
         text = colored(char, 'red', attrs=['reverse', 'blink'])
         print(text)
         playsound('./sounds/piano/19.mp3')
-        
-    
-
