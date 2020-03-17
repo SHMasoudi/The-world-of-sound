@@ -19,10 +19,13 @@ parser.add_argument("--info",
                     help="show some information about the program",
                     action="store_true"
                     )
-parser.add_argument("--file",
+parser.add_argument("--file", "-f",
                     help="input text file",
                     type=str
                     )
+parser.add_argument("--interactive", "-i",
+                    help="provide a string instead of a file",
+                    type=str)
 args = parser.parse_args()
 
 if args.info:
@@ -36,8 +39,14 @@ if args.info:
 
 if args.file:
     s = args.file
+    file = open(s, "r")
+    c = [ch for ch in file.read()]
+elif args.interactive:
+    c = [ch for ch in args.interactive]
 else:
     s = input("Please enter the path of your file>>> ")
+    file = open(s, "r")
+    c = [ch for ch in file.read()]
 #------------------------------------------------------------------
 
 def pause():
@@ -47,8 +56,8 @@ def pause():
     elif statusSleep == 1:
         sleep(1)
 #------------------------------------------------------------------
-file = open(s, "r")
-c=[ch for ch in file.read()]
+
+
 for char in c:
 
     pause()
