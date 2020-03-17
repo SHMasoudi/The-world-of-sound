@@ -9,23 +9,35 @@ from playsound import playsound
 from time import sleep
 from termcolor import colored
 import random
-#----------------------------------------------------------------
 import sys
-try:
-    option=sys.argv[1]
-except IndexError:
-    import piano
+import argparse
+#----------------------------------------------------------------
+parser = argparse.ArgumentParser(prog="piano",
+                                 description="A Collection of Piano Notes That Make A Pleasant Sound"
+                                 )
+parser.add_argument("--info",
+                    help="show some information about the program",
+                    action="store_true"
+                    )
+parser.add_argument("--file",
+                    help="input text file",
+                    type=str
+                    )
+args = parser.parse_args()
+
+if args.info:
+    print("The World of Sound\n"
+          "A Collection of Piano Notes That Make A Pleasant Sound\n"
+          "Developers: Sheyda Masoudi & Kia Hamedi\n"
+          "Email: ubuntuic6449@gmail.com\n"
+          "Github Address: https://github.com/sheyda1997/The-world-of-sound.git\n"
+          )
+    sys.exit(0)
+
+if args.file:
+    s = args.file
 else:
-    if option=="-h" or option=="--help":
-        print("The World Of Sound")
-        print("Description : A Collection of Piano Notes That Make A Pleasant Sound")
-        print("Developer:Sheyda Masoudi & Kia Hamedi")
-        print("Email: ubuntuic6449@gmail.com")
-        print("Github Address : git ttps://github.com/sheyda1997/The-world-of-sound.git")
-        sys.exit(1)
-    else:
-        print("invalid option")
-        sys.exit(1)
+    s = input("Please enter the path of your file>>> ")
 #------------------------------------------------------------------
 
 def pause():
@@ -35,8 +47,6 @@ def pause():
     elif statusSleep == 1:
         sleep(1)
 #------------------------------------------------------------------
-
-s = input(">>>Please Enter the path of your file: ")
 file = open(s, "r")
 c=[ch for ch in file.read()]
 for char in c:
