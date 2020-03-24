@@ -9,8 +9,9 @@
 
 ## Usage
 ```bash
-$ git https://github.com/sheyda1997/The-world-of-sound.git
+$ git clone https://github.com/sheyda1997/The-world-of-sound
 $ pip3 install playsound
+$ pip3 install termcolor
 $ pip3 install termcolor
 $ cd The-world-of-sound/
 $ python piano.py
